@@ -10,15 +10,15 @@ d_0 % 1 == 0 (trivially true)
 ( d_0 * b^(b-3) + ... + d_(b-2) % (b-2) ) % (b-2) == 0
 
 ## poly - Test an individual number for polydivisibility
-
+```
 ./poly b d_0 d_1 d_2 d_3 ...
-
+```
 i.e. the base followed by the digits in that base.
 
 ## polyb - Check a given base to find any polydivisible numbers that exist.
-
+```
 ./poly b alg
-
+```
 i.e. the base followed by an integer to select the algorithm:
 
 * 1 : Generate all permutations via Heap's algorithm (iterative version) and test each individually
