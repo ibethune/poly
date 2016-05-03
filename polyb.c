@@ -157,8 +157,10 @@ int main(int argc, char **argv)
    printf("Checking base %u ...\n",b);
 
    if (b % 2 == 1)
-   printf("Odd base => No polydivisible numbers!\n");
-   return 0;
+   {
+      printf("Odd base => No polydivisible numbers!\n");
+      return 0;
+   }
    
    uint32_t *a = (uint32_t *)malloc((b-1)*sizeof(uint32_t));
    uint32_t *n = (uint32_t *)malloc((b-1)*sizeof(uint32_t));
